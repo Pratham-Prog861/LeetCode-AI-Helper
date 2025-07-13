@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LeetCode AI Helper</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <h2>AI Coding Assistant</h2>
+
+  <label for="language">Choose Language:</label>
+  <select id="language">
+    <option value="Python">Python</option>
+    <option value="C++">C++</option>
+    <option value="Java">Java</option>
+    <option value="JavaScript">JavaScript</option>
+    <option value="TypeScript">TypeScript</option>
+  </select>
+
+  <div class="button-group">
+    <button id="hints">Hints</button>
+    <button id="approach">Approach</button>
+    <button id="code">Code</button>
+  </div>
+
+  <pre id="response"><span class="placeholder">Your AI response will appear here...</span></pre>
+  <div class="spinner" id="spinner" style="display:none;"></div>
+
+  <hr />
+  <label for="apikey">Gemini API Key:</label>
+  <input type="password" id="apikey" placeholder="Paste once to save" />
+  <button id="saveKey">Save Key</button>
+
+  <script src="popup.js"></script>
+</body>
+</html> 
